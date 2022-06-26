@@ -1,4 +1,4 @@
-import {UserEntity, UserReqEntity} from "../types";
+import {SimpleUserEntity, UserEntity, UserReqEntity} from "../types";
 import {FieldPacket} from "mysql2";
 import {pool} from "../utils/db";
 
@@ -20,15 +20,15 @@ export class UserRecord implements UserEntity {
        this.email = obj.email;
    }
 
-   static async getUser(email: string): Promise<UserReqEntity | null>{
-       const [result] = await pool.execute("SELECT `name`, `email` FROM `users` WHERE `email` = :email", {
+   static async getUser(email: string): Promise<SimpleUserEntity | null>{
+       const [result] = await pool.execute("SELECT `name`, `email`, `password` FROM `users` WHERE `email` = :email", {
            email
        }) as UserRecordResults;
 
        return result.length === 0? null : new UserRecord(result[0])
    }
 
-   async addUsertoDB(): Promise<void>{
+   async addUserToDB(): Promise<void>{
 
        await pool.execute( "INSERT INTO `users`(`userId`, `name`,`password`,`email`) VALUES(:userId, :name, :password, :email)",{
            userId: this.userId,

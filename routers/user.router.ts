@@ -24,7 +24,7 @@ export const UserRouter = Router()
         // Validate user input
         const errors = validationResult(req);
 
-        if(!errors.isEmpty()){
+        if (!errors.isEmpty()) {
             return res.status(400).json({errors: errors.array()})
         }
 
@@ -32,7 +32,7 @@ export const UserRouter = Router()
 
         const user = await UserRecord.getUser(email)
 
-        if(user !== null) {
+        if (user !== null) {
             return res.status(200).json({
                 errors: [
                     {
@@ -43,7 +43,6 @@ export const UserRouter = Router()
             });
         }
 
-        // return res.json('można zalozyc konto')
 
         // Hash password before saving to DB
 
@@ -52,21 +51,55 @@ export const UserRouter = Router()
 
         // Add user to DB
         const newUser = new UserRecord({...req.body, password: hashedPassword, userId: uuid()})
-        await newUser.addUsertoDB()
+        await newUser.addUserToDB()
 
         // Send Acess Token to user
 
         const accessToken = await JWT.sign(
             {email, name},
             process.env.ACCESS_TOKEN_SECRET,
-            {expiresIn: "60m"}
+            {expiresIn: "24h"}
         );
 
         res.json(accessToken)
-
-
     })
 
     .post('/login', async (req, res) => {
+        const {email, password, name} = req.body;
+
+        // Look for user email in DB
+        const user = await UserRecord.getUser(email);
+
+        // If user not found, send error message
+        if (user === null) {
+            return res.status(400).json({
+                errors: [
+                    {
+                        msg: 'No user in DB',
+                    },
+                ],
+            });
+        }
+        // compare hashed password with user password to see if they are valid
+        const isMatch = await bcrypt.compare(password, user.password);
+
+        if (!isMatch) {
+            return res.status(401).json({
+                errors: [
+                    {
+                        msg: "Email or password is invalid"
+                    },
+                ],
+            });
+        }
+        // Send Acess Token to user
+
+        const accessToken = await JWT.sign(
+            {email, name},
+            process.env.ACCESS_TOKEN_SECRET,
+            {expiresIn: "24h"}
+        );
+
+        res.json(accessToken)
 
     })
