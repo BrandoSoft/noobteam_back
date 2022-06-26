@@ -1,4 +1,4 @@
-import {SimpleUserEntity, UserEntity, UserReqEntity} from "../types";
+import {SimpleUserEntity, UserEntity} from "../types";
 import {FieldPacket} from "mysql2";
 import {pool} from "../utils/db";
 
