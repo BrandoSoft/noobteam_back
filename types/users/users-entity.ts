@@ -1,7 +1,13 @@
-export interface UsersEntity {
-    userId: string;
+export interface UserReqEntity {
     name: string;
-    password: string;
     email: string;
+}
+
+export interface SimpleUserEntity extends UserReqEntity {
+    password: string;
+}
+
+export interface UserEntity extends SimpleUserEntity {
+    userId: string;
     cratedAt: Date;
 }

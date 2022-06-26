@@ -23,8 +23,6 @@ app.use('/user', UserRouter)
 
 app.use(handleError)
 
-console.log(process.env.API_KEY)
-
 
 app.listen(3001, '0.0.0.0', () => {
     console.log('Listening on port http://localhost:3001')

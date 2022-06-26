@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "preserveConstEnums": true,
     "sourceMap": true,
     "target": "ES6",
