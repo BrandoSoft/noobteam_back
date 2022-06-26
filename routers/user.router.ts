@@ -54,13 +54,15 @@ export const UserRouter = Router()
         const newUser = new UserRecord({...req.body, password: hashedPassword, userId: uuid()})
         await newUser.addUsertoDB()
 
-        const acessToken = await JWT.sign(
+        // Send Acess Token to user
+
+        const accessToken = await JWT.sign(
             {email, name},
             process.env.ACCESS_TOKEN_SECRET,
             {expiresIn: "60m"}
         );
 
-        res.json(acessToken)
+        res.json(accessToken)
 
 
     })
