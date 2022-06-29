@@ -65,7 +65,7 @@ export const UserRouter = Router()
     })
 
     .post('/login', async (req, res) => {
-        const {email, password, name} = req.body;
+        const {email, password} = req.body;
 
         // Look for user email in DB
         const user = await UserRecord.getUser(email);
@@ -95,11 +95,12 @@ export const UserRouter = Router()
         // Send Acess Token to user
 
         const accessToken = await JWT.sign(
-            {email, name},
+            {email},
             process.env.ACCESS_TOKEN_SECRET,
             {expiresIn: "24h"}
         );
+        const {userId, name} = user;
 
-        res.json(accessToken)
+        res.json({accessToken, userId, name})
 
     })

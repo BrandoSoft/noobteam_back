@@ -1,10 +1,12 @@
 export interface UserReqEntity {
     name: string;
     email: string;
+    password: string;
 }
 
 export interface SimpleUserEntity extends UserReqEntity {
-    password: string;
+    userId: string;
+
 }
 
 export interface UserEntity extends SimpleUserEntity {

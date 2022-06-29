@@ -21,7 +21,7 @@ export class UserRecord implements UserEntity {
    }
 
    static async getUser(email: string): Promise<SimpleUserEntity | null>{
-       const [result] = await pool.execute("SELECT `name`, `email`, `password` FROM `users` WHERE `email` = :email", {
+       const [result] = await pool.execute("SELECT `name`, `email`, `password`, `userId` FROM `users` WHERE `email` = :email", {
            email
        }) as UserRecordResults;
 
