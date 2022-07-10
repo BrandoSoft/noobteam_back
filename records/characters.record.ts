@@ -46,6 +46,15 @@ export class CharactersRecord implements CharactersEntity {
         })
     }
 
+    static async findCharacterInDb (name: string): Promise<boolean>{
+        const [result] = await pool.execute("SELECT `name` FROM  `characters` WHERE `name` = :name", {
+            name
+        }) as CharactersRecordResults;
+
+        return result.length < 1;
+
+    }
+
     async addCharacter(): Promise<void> {
         //@TODO add validation
 

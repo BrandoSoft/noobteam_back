@@ -14,9 +14,9 @@ export const CharactersRouter = Router()
     })
 
     .get('/find/:name', authToken, async (req, res) => {
-       const character = await CharactersRecord.findCharacter(req.params.name)
+        const character = await CharactersRecord.findCharacter(req.params.name)
 
-        if(character){
+        if (character) {
             return res.json(character)
         }
         return res.status(400).json({
@@ -29,8 +29,21 @@ export const CharactersRouter = Router()
     })
 
     .post('/', authToken, async (req, res) => {
-        const newCharacter = new CharactersRecord(req.body)
-        console.log(newCharacter)
-        await newCharacter.addCharacter()
-        res.json('ok')
+
+        const isCharViable = await CharactersRecord.findCharacterInDb(req.body.name)
+
+        if (isCharViable){
+            const newCharacter = new CharactersRecord(req.body)
+            await newCharacter.addCharacter()
+            return res.status(200).json('mozna')
+        }
+        if (!isCharViable) {
+            return res.status(400).json({
+                errors: [
+                    {
+                        msg: "Postać jest już na Twojej liście."
+                    }
+                ]
+            })
+        }
     })
