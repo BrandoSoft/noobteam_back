@@ -1,6 +1,12 @@
-import {CharactersEntity, NewCharactersEntity, SimpleCharactersEntity} from "../types";
+import {
+    CharactersEntity,
+    NewCharactersEntity, RiotCharacterEntity,
+    SimpleCharactersEntity,
+    SimpleRiotCharacterEntity
+} from "../types";
 import {FieldPacket} from "mysql2";
 import {pool} from "../utils/db";
+import axios from "axios";
 
 
 type CharactersRecordResults = [CharactersEntity[], FieldPacket[]];
@@ -24,7 +30,7 @@ export class CharactersRecord implements CharactersEntity {
         return results.map(result => {
             const {name, puuid} = result;
 
-            return{
+            return {
                 name, puuid
             }
         })
@@ -34,5 +40,23 @@ export class CharactersRecord implements CharactersEntity {
         //@TODO add validation
 
         await pool.execute("INSERT INTO `characters`(`userId`, `name`, `puuid`) VALUES (:userId, :name, :puuid)", this)
+    }
+
+    static async findCharacter(characterName: string): Promise<RiotCharacterEntity | null> {
+
+        try {
+            const resp = await axios({
+                method: 'get',
+                url: `https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${characterName}`,
+                headers: {
+                    'X-Riot-Token': process.env.API_KEY
+                }
+            })
+            return resp.data
+        }catch (e){
+           console.log(e)
+        }
+
+        return null
     }
 }

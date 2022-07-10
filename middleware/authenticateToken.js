@@ -22,7 +22,6 @@ const authToken = async (req, res, next) => {
     // Authenticate token
     try {
         const user = await JWT.verify(token, process.env.ACCESS_TOKEN_SECRET);
-        console.log("auth", req)
         req.user = user.email;
         next();
     } catch (error) {
