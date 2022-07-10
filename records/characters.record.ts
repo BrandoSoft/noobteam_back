@@ -33,15 +33,15 @@ export class CharactersRecord implements CharactersEntity {
     }
 
     static async getAllCharacters(userId: string): Promise<SimpleCharactersEntity[]> {
-        const [results] = await pool.execute("SELECT `name`,`puuid` FROM `characters` WHERE `userId`= :userId", {
+        const [results] = await pool.execute("SELECT `name`,`puuid`,`profileIconId`, `summonerLevel` FROM `characters` WHERE `userId`= :userId", {
             userId
         }) as CharactersRecordResults;
 
         return results.map(result => {
-            const {name, puuid} = result;
+            const {name, puuid, profileIconId, summonerLevel} = result;
 
             return {
-                name, puuid
+                name, puuid, profileIconId, summonerLevel
             }
         })
     }
@@ -79,5 +79,12 @@ export class CharactersRecord implements CharactersEntity {
         return null
     }
 
+    static async deleteCharacter(name: string, userId: string): Promise<any>{
+        console.log(name, userId)
+        const del = await pool.execute("DELETE FROM `characters` WHERE  `name`= :name AND `userId`= :userId",
+            {name, userId})
+        console.log(del)
+        return del
+    }
 
 }

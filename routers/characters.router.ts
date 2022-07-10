@@ -32,7 +32,7 @@ export const CharactersRouter = Router()
 
         const isCharViable = await CharactersRecord.findCharacterInDb(req.body.name)
 
-        if (isCharViable){
+        if (isCharViable) {
             const newCharacter = new CharactersRecord(req.body)
             await newCharacter.addCharacter()
             return res.status(200).json('mozna')
@@ -46,4 +46,15 @@ export const CharactersRouter = Router()
                 ]
             })
         }
+
+    })
+
+
+    .delete('/', authToken, async (req, res) => {
+        const {name,userId} = req.body
+        await CharactersRecord.deleteCharacter(name, userId);
+
+        res.json('chyba się udało')
+
+        //@TODO Add Validation
     })

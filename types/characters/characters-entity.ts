@@ -1,6 +1,8 @@
-export interface SimpleCharactersEntity{
+export interface SimpleCharactersEntity extends SimpleRiotCharacterEntity{
     name: string;
     puuid: string;
+    profileIconId: number,
+    summonerLevel: number,
 }
 
 export interface CharactersEntity extends RiotCharacterEntity{
