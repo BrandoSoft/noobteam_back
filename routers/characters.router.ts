@@ -28,6 +28,24 @@ export const CharactersRouter = Router()
         });
     })
 
+    .get('/game/:id', authToken, async (req, res) => {
+
+        console.log(req.params.id)
+
+        const game = await CharactersRecord.findMatch(req.params.id)
+
+        if (game) {
+            return res.json(game)
+        }
+        return res.status(400).json({
+            errors: [
+                {
+                    msg: 'No match found',
+                },
+            ],
+        });
+    })
+
     .post('/', authToken, async (req, res) => {
 
         const isCharViable = await CharactersRecord.findCharacterInDb(req.body.name)
@@ -51,10 +69,11 @@ export const CharactersRouter = Router()
 
 
     .delete('/', authToken, async (req, res) => {
-        const {name,userId} = req.body
+        const {name, userId} = req.body
         await CharactersRecord.deleteCharacter(name, userId);
 
         res.json('chyba się udało')
 
         //@TODO Add Validation
     })
+

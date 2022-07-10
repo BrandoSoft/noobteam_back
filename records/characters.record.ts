@@ -2,7 +2,6 @@ import {
     CharactersEntity,
     NewCharactersEntity, RiotCharacterEntity,
     SimpleCharactersEntity,
-    SimpleRiotCharacterEntity
 } from "../types";
 import {FieldPacket} from "mysql2";
 import {pool} from "../utils/db";
@@ -33,15 +32,15 @@ export class CharactersRecord implements CharactersEntity {
     }
 
     static async getAllCharacters(userId: string): Promise<SimpleCharactersEntity[]> {
-        const [results] = await pool.execute("SELECT `name`,`puuid`,`profileIconId`, `summonerLevel` FROM `characters` WHERE `userId`= :userId", {
+        const [results] = await pool.execute("SELECT `name`,`puuid`,`profileIconId`, `summonerLevel`, `id` FROM `characters` WHERE `userId`= :userId", {
             userId
         }) as CharactersRecordResults;
 
         return results.map(result => {
-            const {name, puuid, profileIconId, summonerLevel} = result;
+            const {name, puuid, profileIconId, summonerLevel, id} = result;
 
             return {
-                name, puuid, profileIconId, summonerLevel
+                name, puuid, profileIconId, summonerLevel, id
             }
         })
     }
@@ -57,8 +56,8 @@ export class CharactersRecord implements CharactersEntity {
 
     async addCharacter(): Promise<void> {
         //@TODO add validation
-
-        await pool.execute("INSERT INTO `characters`(`puuid`,`userId`, `name`, `accountId`, `id`, `profileIconId`, `revisionDate`, `summonerLevel`) VALUES (:puuid, :userId, :name, accountId, :id, :profileIconId, :revisionDate, :summonerLevel)", this)
+        console.log(this)
+        await pool.execute("INSERT INTO `characters`(`puuid`,`userId`, `name`, `accountId`, `id`, `profileIconId`, `revisionDate`, `summonerLevel`) VALUES (:puuid, :userId, :name, :accountId, :id, :profileIconId, :revisionDate, :summonerLevel)", this)
     }
 
     static async findCharacter(characterName: string): Promise<RiotCharacterEntity | null> {
@@ -77,6 +76,24 @@ export class CharactersRecord implements CharactersEntity {
         }
 
         return null
+    }
+
+    static async findMatch(encryptedId: string): Promise<any> {
+        console.log(encryptedId)
+        try {
+            const resp = await axios({
+                method: 'get',
+                url: `https://eun1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/${encryptedId}`,
+                headers: {
+                    'X-Riot-Token': process.env.API_KEY
+                }
+            })
+            return resp.data
+        } catch (e) {
+            console.log(e)
+        }
+
+
     }
 
     static async deleteCharacter(name: string, userId: string): Promise<any>{
