@@ -28,8 +28,9 @@ export const CharactersRouter = Router()
         });
     })
 
-    .post('/', async (req, res) => {
+    .post('/', authToken, async (req, res) => {
         const newCharacter = new CharactersRecord(req.body)
+        console.log(newCharacter)
         await newCharacter.addCharacter()
         res.json('ok')
     })

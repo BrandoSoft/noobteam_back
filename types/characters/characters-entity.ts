@@ -3,7 +3,7 @@ export interface SimpleCharactersEntity{
     puuid: string;
 }
 
-export interface CharactersEntity extends SimpleCharactersEntity{
+export interface CharactersEntity extends RiotCharacterEntity{
     userId: string;
 }
 

@@ -15,11 +15,21 @@ export class CharactersRecord implements CharactersEntity {
     public name: string;
     public userId: string;
     public puuid: string;
+    public accountId: number;
+    public id: string;
+    public profileIconId: number;
+    public revisionDate: number;
+    public summonerLevel: number;
 
     constructor(obj: NewCharactersEntity) {
         this.puuid = obj.puuid;
         this.userId = obj.userId;
         this.name = obj.name;
+        this.accountId = obj.accountId;
+        this.id = obj.id
+        this.profileIconId = obj.profileIconId;
+        this.revisionDate = obj.revisionDate
+        this.summonerLevel = obj.summonerLevel
     }
 
     static async getAllCharacters(userId: string): Promise<SimpleCharactersEntity[]> {
@@ -39,7 +49,7 @@ export class CharactersRecord implements CharactersEntity {
     async addCharacter(): Promise<void> {
         //@TODO add validation
 
-        await pool.execute("INSERT INTO `characters`(`userId`, `name`, `puuid`) VALUES (:userId, :name, :puuid)", this)
+        await pool.execute("INSERT INTO `characters`(`puuid`,`userId`, `name`, `accountId`, `id`, `profileIconId`, `revisionDate`, `summonerLevel`) VALUES (:puuid, :userId, :name, accountId, :id, :profileIconId, :revisionDate, :summonerLevel)", this)
     }
 
     static async findCharacter(characterName: string): Promise<RiotCharacterEntity | null> {
@@ -53,10 +63,12 @@ export class CharactersRecord implements CharactersEntity {
                 }
             })
             return resp.data
-        }catch (e){
-           console.log(e)
+        } catch (e) {
+            console.log(e)
         }
 
         return null
     }
+
+
 }
