@@ -3,7 +3,8 @@ import express, {json} from "express";
 import rateLimit from "express-rate-limit";
 import {handleError} from "./utils/error";
 import {CharactersRouter} from "./routers/characters.router";
-import { UserRouter } from "./routers/user.router";
+import {UserRouter} from "./routers/user.router";
+import {MatchesRouter} from "./routers/matches.router";
 
 const app = express();
 
@@ -17,8 +18,9 @@ app.use(rateLimit({
     max: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
 }))
 
-app.use('/characters', CharactersRouter)
-app.use('/user', UserRouter)
+app.use('/characters', CharactersRouter);
+app.use('/user', UserRouter);
+app.use('/matches', MatchesRouter);
 
 app.use(handleError)
 
