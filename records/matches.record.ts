@@ -16,7 +16,7 @@ export class MatchesRecord implements MatchesEntity {
         try {
             const resp = await axios({
                 method: 'get',
-                url: `https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=2`,
+                url: `https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=1`,
                 headers: {
                     'X-Riot-Token': process.env.API_KEY
                 }
@@ -49,22 +49,3 @@ export class MatchesRecord implements MatchesEntity {
         }
     }
 }
-
-// const cos = await list.map(async (item) => {
-//     const gameResp = await axios({
-//         method: 'get',
-//         url: `https://europe.api.riotgames.com/lol/match/v5/matches/${item}`,
-//         headers: {
-//             'X-Riot-Token': process.env.API_KEY
-//         }
-//     })
-//
-// })
-// const obj = {
-//     name: gameResp.data.info.participants[0].championName,
-//     kills: gameResp.data.info.participants[0].kills,
-//     deaths: gameResp.data.info.participants[0].deaths,
-//     assists: gameResp.data.info.participants[0].assists
-// }
-//
-// await result.push(obj)

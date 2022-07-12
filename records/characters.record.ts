@@ -1,5 +1,5 @@
 import {
-    CharactersEntity,
+    CharactersEntity, LeaguesEntity,
     NewCharactersEntity, RiotCharacterEntity,
     SimpleCharactersEntity,
 } from "../types";
@@ -92,9 +92,24 @@ export class CharactersRecord implements CharactersEntity {
         } catch (e) {
             console.log(e)
         }
-
-
     }
+
+    static async getLeagues(encryptedId: string): Promise<LeaguesEntity | LeaguesEntity[]> {
+
+        try {
+            const resp = await axios({
+                method: 'get',
+                url: `https://eun1.api.riotgames.com/lol/league/v4/entries/by-summoner/${encryptedId}`,
+                headers: {
+                    'X-Riot-Token': process.env.API_KEY
+                }
+            })
+            return resp.data
+        } catch (e) {
+            console.log(e)
+        }
+    }
+
 
     static async deleteCharacter(name: string, userId: string): Promise<any>{
         console.log(name, userId)

@@ -1,6 +1,5 @@
 import {Router} from "express";
 import {MatchesRecord} from "../records/matches.record";
-import {log} from "util";
 
 const authToken = require("../middleware/authenticateToken");
 

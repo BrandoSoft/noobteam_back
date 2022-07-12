@@ -3,6 +3,7 @@ import {CharactersRecord} from "../records/characters.record";
 
 const authToken = require("../middleware/authenticateToken");
 
+
 export const CharactersRouter = Router()
     .get('/', (req, res) => {
         res.json('Witamy w characters')
@@ -11,6 +12,10 @@ export const CharactersRouter = Router()
     .get('/:userId', authToken, async (req, res) => {
         const characters = await CharactersRecord.getAllCharacters(req.params.userId);
         res.json(characters);
+    })
+    .get('/leagues/:userId', authToken, async (req, res) => {
+        const leagues = await CharactersRecord.getLeagues(req.params.userId);
+        res.json(leagues);
     })
 
     .get('/find/:name', authToken, async (req, res) => {
@@ -76,4 +81,3 @@ export const CharactersRouter = Router()
 
         //@TODO Add Validation
     })
-
