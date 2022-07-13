@@ -45,9 +45,10 @@ export class CharactersRecord implements CharactersEntity {
         })
     }
 
-    static async findCharacterInDb (name: string): Promise<boolean>{
-        const [result] = await pool.execute("SELECT `name` FROM  `characters` WHERE `name` = :name", {
-            name
+    static async findCharacterInDb (name: string, userId: string): Promise<boolean>{
+        const [result] = await pool.execute("SELECT `name` FROM  `characters` WHERE `name` = :name AND `userId` = :userId", {
+            name,
+            userId
         }) as CharactersRecordResults;
 
         return result.length < 1;
@@ -76,6 +77,25 @@ export class CharactersRecord implements CharactersEntity {
         }
 
         return null
+    }
+    static async findRandomCharacter(){
+        try {
+            const resp = await axios({
+                method: 'get',
+                url: `https://eun1.api.riotgames.com/lol/spectator/v4/featured-games`,
+                headers: {
+                    'X-Riot-Token': process.env.API_KEY
+                }
+            })
+            const randomGame= Math.floor(Math.random() * (4 + 1));
+            const randomPlayer = Math.floor(Math.random() * (9 + 1));
+            console.log(randomGame, randomPlayer)
+            return resp.data.gameList[randomGame].participants[randomPlayer]
+
+        } catch (e) {
+            console.log(e)
+        }
+        return 'cos poszlo nie tak'
     }
 
     static async findMatch(encryptedId: string): Promise<any> {

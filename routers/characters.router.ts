@@ -33,6 +33,23 @@ export const CharactersRouter = Router()
         });
     })
 
+    .get('/random/player', authToken, async (req, res) => {
+        const random = await CharactersRecord.findRandomCharacter();
+
+        const randomPlayer = await CharactersRecord.findCharacter(random.summonerName)
+
+        if (randomPlayer) {
+            return res.json(randomPlayer)
+        }
+        return res.status(400).json({
+            errors: [
+                {
+                    msg: 'No character found (coś poszło nie tak)',
+                },
+            ],
+        });
+    })
+
     .get('/game/:id', authToken, async (req, res) => {
 
         console.log(req.params.id)
@@ -52,8 +69,8 @@ export const CharactersRouter = Router()
     })
 
     .post('/', authToken, async (req, res) => {
-
-        const isCharViable = await CharactersRecord.findCharacterInDb(req.body.name)
+        console.log(req.body)
+        const isCharViable = await CharactersRecord.findCharacterInDb(req.body.name, req.body.userId)
 
         if (isCharViable) {
             const newCharacter = new CharactersRecord(req.body)
