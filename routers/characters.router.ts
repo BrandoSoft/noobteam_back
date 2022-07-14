@@ -6,7 +6,7 @@ const authToken = require("../middleware/authenticateToken");
 
 export const CharactersRouter = Router()
     .get('/', (req, res) => {
-        res.json('Witamy w characters')
+             res.json('Witamy w characters')
     })
 
     .get('/:userId', authToken, async (req, res) => {
@@ -69,7 +69,7 @@ export const CharactersRouter = Router()
     })
 
     .post('/', authToken, async (req, res) => {
-        console.log(req.body)
+
         const isCharViable = await CharactersRecord.findCharacterInDb(req.body.name, req.body.userId)
 
         if (isCharViable) {

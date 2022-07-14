@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import cors from "cors";
 import express, {json} from "express";
 import rateLimit from "express-rate-limit";
