@@ -1,6 +1,23 @@
+//{
+//  "compilerOptions": {
+//    "noImplicitAny": false,
+//    "preserveConstEnums": true,
+//    "sourceMap": true,
+//    "target": "ES6",
+//    "downlevelIteration": true,
+//    "module": "CommonJS",
+//    "lib": ["es6"],
+//    "outDir": "dist",
+//    "experimentalDecorators": true,
+//    "emitDecoratorMetadata": true,
+//    "moduleResolution": "Node",
+//    "esModuleInterop": true,
+//    "typeRoots": ["./node_modules/@types", "./src/types"]
+//  }
+//}
 {
   "compilerOptions": {
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "preserveConstEnums": true,
     "sourceMap": true,
     "target": "ES6",
@@ -11,7 +28,6 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "moduleResolution": "Node",
-    "esModuleInterop": true,
-    "typeRoots": ["./node_modules/@types", "./src/types"]
+    "esModuleInterop": true
   }
 }
