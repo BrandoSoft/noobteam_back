@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import {Router} from "express";
+import {Request, Response, Router} from "express";
 import {check, validationResult} from "express-validator";
 import {UserRecord} from "../records/user.record";
 import {v4 as uuid} from 'uuid'
@@ -17,7 +17,7 @@ export const UserRouter = Router()
         check('name', 'Name must be at least 3 chars long').isLength({min: 3}),
         check("email", "Invalid Email").isEmail(),
         check("password", "Password must be at least 3 chars long").isLength({min: 3,}),
-    ], async (req, res) => {
+    ], async (req: Request, res:Response) => {
 
         const {email, password, name} = req.body;
 
