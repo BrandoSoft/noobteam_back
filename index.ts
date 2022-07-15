@@ -12,7 +12,7 @@ import {config} from "./config/config";
 const app = express();
 
 app.use(cors({
-    origin: ['https://brandosoft.github.io/', 'http://localhost:3000']
+    origin: "*"
     },
     ));
 
