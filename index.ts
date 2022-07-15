@@ -12,7 +12,7 @@ import {config} from "./config/config";
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:3000'
+    origin: 'https://brandosoft.github.io/noobteam_front/'
 }));
 
 app.use(json());
