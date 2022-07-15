@@ -7,6 +7,7 @@ import {CharactersRouter} from "./routers/characters.router";
 import {UserRouter} from "./routers/user.router";
 import {MatchesRouter} from "./routers/matches.router";
 import {InfoRouter} from "./routers/info.router";
+import {config} from "./config/config";
 
 const app = express();
 
@@ -29,6 +30,6 @@ app.use(handleError)
 
 
 
-app.listen(3001, '0.0.0.0', () => {
+app.listen(config.server.port,  () => {
     console.log('Listening on port http://localhost:3001')
 })

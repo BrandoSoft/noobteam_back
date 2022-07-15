@@ -45,7 +45,7 @@ export const CharactersRouter = Router()
         return res.status(400).json({
             errors: [
                 {
-                    msg: 'No character found (coś poszło nie tak)',
+                    msg: 'Brak użytkownika w bazie, lub nazwa zawiera niedozwolone znaki.',
                 },
             ],
         });

@@ -52,17 +52,15 @@ export class CharactersRecord implements CharactersEntity {
         }) as CharactersRecordResults;
 
         return result.length < 1;
-
     }
 
     async addCharacter(): Promise<void> {
         //@TODO add validation
-        console.log(this)
+
         await pool.execute("INSERT INTO `characters`(`puuid`,`userId`, `name`, `accountId`, `id`, `profileIconId`, `revisionDate`, `summonerLevel`) VALUES (:puuid, :userId, :name, :accountId, :id, :profileIconId, :revisionDate, :summonerLevel)", this)
     }
 
     static async findCharacter(characterName: string): Promise<RiotCharacterEntity | null> {
-
         try {
             const resp = await axios({
                 method: 'get',
@@ -89,7 +87,7 @@ export class CharactersRecord implements CharactersEntity {
             })
             const randomGame= Math.floor(Math.random() * (4 + 1));
             const randomPlayer = Math.floor(Math.random() * (9 + 1));
-            console.log(randomGame, randomPlayer)
+
             return resp.data.gameList[randomGame].participants[randomPlayer]
 
         } catch (e) {
@@ -99,7 +97,6 @@ export class CharactersRecord implements CharactersEntity {
     }
 
     static async findMatch(encryptedId: string): Promise<any> {
-        console.log(encryptedId)
         try {
             const resp = await axios({
                 method: 'get',
@@ -115,7 +112,6 @@ export class CharactersRecord implements CharactersEntity {
     }
 
     static async getLeagues(encryptedId: string): Promise<LeaguesEntity | LeaguesEntity[]> {
-
         try {
             const resp = await axios({
                 method: 'get',
@@ -132,7 +128,7 @@ export class CharactersRecord implements CharactersEntity {
 
 
     static async deleteCharacter(name: string, userId: string): Promise<any>{
-        console.log(name, userId)
+
         const del = await pool.execute("DELETE FROM `characters` WHERE  `name`= :name AND `userId`= :userId",
             {name, userId})
         console.log(del)
