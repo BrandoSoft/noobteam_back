@@ -7,7 +7,7 @@
     "downlevelIteration": true,
     "module": "CommonJS",
     "lib": ["es6"],
-    "outDir": ".app/build",
+    "outDir": "./app",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "moduleResolution": "Node",
