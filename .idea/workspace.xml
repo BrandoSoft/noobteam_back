@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40d02ead-8dd0-44f8-94a1-4773bebc3154" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/user.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routers/user.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/authenticateToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/authenticateToken.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,12 @@
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="ts.external.directory.path" value="C:\Users\csbra\Desktop\NoobTeam\nt_backend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\csbra\Desktop\NoobTeam\nt_backend\middleware" />
+      <recent name="C:\Users\csbra\Desktop\NoobTeam\nt_backend\utils" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.start:dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -72,9 +78,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -93,7 +99,7 @@
       <workItem from="1656848105065" duration="9876000" />
       <workItem from="1657136830815" duration="1809000" />
       <workItem from="1657294618382" duration="7541000" />
-      <workItem from="1657347532727" duration="67740000" />
+      <workItem from="1657347532727" duration="68315000" />
     </task>
     <task id="LOCAL-00001" summary="added ddpendencies and libraries">
       <created>1656232614654</created>
@@ -284,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657907892011</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="changed noimplicity">
+      <created>1657908046308</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1657908046308</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +324,7 @@
     <MESSAGE value="still working on procfile" />
     <MESSAGE value="build added to gitignore" />
     <MESSAGE value="still procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="still procfile" />
+    <MESSAGE value="changed noimplicity" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed noimplicity" />
   </component>
 </project>
