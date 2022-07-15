@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40d02ead-8dd0-44f8-94a1-4773bebc3154" name="Changes" comment="all looks fine, added how to sql should looks like">
+    <list default="true" id="40d02ead-8dd0-44f8-94a1-4773bebc3154" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -99,7 +99,7 @@
       <workItem from="1656848105065" duration="9876000" />
       <workItem from="1657136830815" duration="1809000" />
       <workItem from="1657294618382" duration="7541000" />
-      <workItem from="1657347532727" duration="69369000" />
+      <workItem from="1657347532727" duration="69542000" />
     </task>
     <task id="LOCAL-00001" summary="added ddpendencies and libraries">
       <created>1656232614654</created>
@@ -318,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657909265307</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="added Readme">
+      <created>1657909689992</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1657909689992</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,6 +355,7 @@
     <MESSAGE value="changed noimplicity" />
     <MESSAGE value="still looking for answers" />
     <MESSAGE value="all looks fine, added how to sql should looks like" />
-    <option name="LAST_COMMIT_MESSAGE" value="all looks fine, added how to sql should looks like" />
+    <MESSAGE value="added Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Readme" />
   </component>
 </project>
