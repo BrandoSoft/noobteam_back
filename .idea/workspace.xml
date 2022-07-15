@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40d02ead-8dd0-44f8-94a1-4773bebc3154" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +100,7 @@
       <workItem from="1657136830815" duration="1809000" />
       <workItem from="1657294618382" duration="7541000" />
       <workItem from="1657347532727" duration="71319000" />
-      <workItem from="1657916243463" duration="48000" />
+      <workItem from="1657916243463" duration="825000" />
     </task>
     <task id="LOCAL-00001" summary="added ddpendencies and libraries">
       <created>1656232614654</created>
@@ -332,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657909931746</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fix: cors problems">
+      <created>1657916408652</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1657916408652</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,6 +371,7 @@
     <MESSAGE value="still looking for answers" />
     <MESSAGE value="all looks fine, added how to sql should looks like" />
     <MESSAGE value="added Readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Readme" />
+    <MESSAGE value="fix: cors problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: cors problems" />
   </component>
 </project>
