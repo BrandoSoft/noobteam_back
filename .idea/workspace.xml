@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="40d02ead-8dd0-44f8-94a1-4773bebc3154" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="2B6hizxqQdYy1ggGWHhrROp3kGl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="18.5.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="18.0.3" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="C:\Users\csbra\Desktop\NoobTeam\nt_backend\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="npm.start:dev">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.start:dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40d02ead-8dd0-44f8-94a1-4773bebc3154" name="Changes" comment="" />
+      <created>1656232576725</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656232576725</updated>
+      <workItem from="1656232580866" duration="16710000" />
+      <workItem from="1656528688537" duration="3673000" />
+      <workItem from="1656788078508" duration="659000" />
+      <workItem from="1656837298604" duration="1925000" />
+      <workItem from="1656848105065" duration="9876000" />
+      <workItem from="1657136830815" duration="1809000" />
+      <workItem from="1657294618382" duration="7541000" />
+      <workItem from="1657347532727" duration="67121000" />
+    </task>
+    <task id="LOCAL-00001" summary="added ddpendencies and libraries">
+      <created>1656232614654</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656232614654</updated>
+    </task>
+    <task id="LOCAL-00002" summary="registration with validation done. Server send u access token after successful registration">
+      <created>1656240911182</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656240911182</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix missspeled">
+      <created>1656241006342</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656241006342</updated>
+    </task>
+    <task id="LOCAL-00004" summary="login user and sending access token complite">
+      <created>1656243115101</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656243115101</updated>
+    </task>
+    <task id="LOCAL-00005" summary="login user and sending access token complite">
+      <created>1656250779417</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656250779417</updated>
+    </task>
+    <task id="LOCAL-00006" summary="user entity changed, we dont send user password anymore :D">
+      <created>1656539435523</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656539435523</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Finding and returning characters or errors done">
+      <created>1657445708624</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657445708624</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Finding and returning characters or errors done">
+      <created>1657468816592</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657468816592</updated>
+    </task>
+    <task id="LOCAL-00009" summary="validation is player alrerady in user List">
+      <created>1657471758544</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657471758544</updated>
+    </task>
+    <task id="LOCAL-00010" summary="remove players from list added">
+      <created>1657484490183</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657484490183</updated>
+    </task>
+    <task id="LOCAL-00011" summary="allay and enemies in game works">
+      <created>1657490439541</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1657490439541</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added match router + methods to get info about matches and scores">
+      <created>1657575669790</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1657575669790</updated>
+    </task>
+    <task id="LOCAL-00013" summary="getting data about champion league is done">
+      <created>1657659853031</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657659853031</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fixed problem with sql, where u cant add player, if other user already got him in his List.">
+      <created>1657740594412</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1657740594412</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added env file and move DB into hosting.">
+      <created>1657831111126</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1657831111126</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added routes for version and api key info">
+      <created>1657897193805</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1657897193805</updated>
+    </task>
+    <task id="LOCAL-00017" summary="preparation for heroku upload">
+      <created>1657903239842</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1657903239842</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added db config and remove it from gitignore">
+      <created>1657903574168</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1657903574168</updated>
+    </task>
+    <task id="LOCAL-00019" summary="heroku dont want to cooperate. trying change something">
+      <created>1657905002628</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1657905002628</updated>
+    </task>
+    <task id="LOCAL-00020" summary="still working on procfile">
+      <created>1657905320602</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1657905320602</updated>
+    </task>
+    <task id="LOCAL-00021" summary="still working on procfile">
+      <created>1657905530436</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1657905530436</updated>
+    </task>
+    <task id="LOCAL-00022" summary="build added to gitignore">
+      <created>1657905585319</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1657905585319</updated>
+    </task>
+    <task id="LOCAL-00023" summary="still procfile">
+      <created>1657905755744</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1657905755744</updated>
+    </task>
+    <task id="LOCAL-00024" summary="still procfile">
+      <created>1657906044337</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1657906044337</updated>
+    </task>
+    <task id="LOCAL-00025" summary="still procfile">
+      <created>1657906436046</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1657906436046</updated>
+    </task>
+    <task id="LOCAL-00026" summary="still procfile">
+      <created>1657906905085</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1657906905085</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added ddpendencies and libraries" />
+    <MESSAGE value="registration with validation done. Server send u access token after successful registration" />
+    <MESSAGE value="fix missspeled" />
+    <MESSAGE value="login user and sending access token complite" />
+    <MESSAGE value="user entity changed, we dont send user password anymore :D" />
+    <MESSAGE value="Finding and returning characters or errors done" />
+    <MESSAGE value="validation is player alrerady in user List" />
+    <MESSAGE value="remove players from list added" />
+    <MESSAGE value="allay and enemies in game works" />
+    <MESSAGE value="added match router + methods to get info about matches and scores" />
+    <MESSAGE value="getting data about champion league is done" />
+    <MESSAGE value="fixed problem with sql, where u cant add player, if other user already got him in his List." />
+    <MESSAGE value="added env file and move DB into hosting." />
+    <MESSAGE value="added routes for version and api key info" />
+    <MESSAGE value="preparation for heroku upload" />
+    <MESSAGE value="added db config and remove it from gitignore" />
+    <MESSAGE value="heroku dont want to cooperate. trying change something" />
+    <MESSAGE value="still working on procfile" />
+    <MESSAGE value="build added to gitignore" />
+    <MESSAGE value="still procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="still procfile" />
+  </component>
+</project>
