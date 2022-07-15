@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40d02ead-8dd0-44f8-94a1-4773bebc3154" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/authenticateToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/authenticateToken.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,8 +78,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start:dev" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -99,7 +99,7 @@
       <workItem from="1656848105065" duration="9876000" />
       <workItem from="1657136830815" duration="1809000" />
       <workItem from="1657294618382" duration="7541000" />
-      <workItem from="1657347532727" duration="68315000" />
+      <workItem from="1657347532727" duration="68768000" />
     </task>
     <task id="LOCAL-00001" summary="added ddpendencies and libraries">
       <created>1656232614654</created>
@@ -297,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657908046308</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="still looking for answers">
+      <created>1657908676238</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1657908676238</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +332,7 @@
     <MESSAGE value="build added to gitignore" />
     <MESSAGE value="still procfile" />
     <MESSAGE value="changed noimplicity" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed noimplicity" />
+    <MESSAGE value="still looking for answers" />
+    <option name="LAST_COMMIT_MESSAGE" value="still looking for answers" />
   </component>
 </project>
