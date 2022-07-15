@@ -6,8 +6,9 @@ const authToken = require("../middleware/authenticateToken");
 
 export const CharactersRouter = Router()
     .get('/', (req, res) => {
-             res.json('Witamy w characters')
+        res.json( 'Witamy w characters')
     })
+
 
     .get('/:userId', authToken, async (req, res) => {
         const characters = await CharactersRecord.getAllCharacters(req.params.userId);

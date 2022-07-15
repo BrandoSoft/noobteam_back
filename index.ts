@@ -1,11 +1,12 @@
 import 'dotenv/config';
 import cors from "cors";
-import express, {json} from "express";
+import express, {json, Router} from "express";
 import rateLimit from "express-rate-limit";
 import {handleError} from "./utils/error";
 import {CharactersRouter} from "./routers/characters.router";
 import {UserRouter} from "./routers/user.router";
 import {MatchesRouter} from "./routers/matches.router";
+import {InfoRouter} from "./routers/info.router";
 
 const app = express();
 
@@ -22,8 +23,10 @@ app.use(rateLimit({
 app.use('/characters', CharactersRouter);
 app.use('/user', UserRouter);
 app.use('/matches', MatchesRouter);
+app.use('/info', InfoRouter);
 
 app.use(handleError)
+
 
 
 app.listen(3001, '0.0.0.0', () => {
