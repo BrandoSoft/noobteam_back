@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40d02ead-8dd0-44f8-94a1-4773bebc3154" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/records/characters.record.ts" beforeDir="false" afterPath="$PROJECT_DIR$/records/characters.record.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +101,8 @@
       <workItem from="1657294618382" duration="7541000" />
       <workItem from="1657347532727" duration="71319000" />
       <workItem from="1657916243463" duration="1074000" />
-      <workItem from="1657918163267" duration="722000" />
+      <workItem from="1657918163267" duration="985000" />
+      <workItem from="1661280736111" duration="967000" />
     </task>
     <task id="LOCAL-00001" summary="added ddpendencies and libraries">
       <created>1656232614654</created>
@@ -348,14 +349,20 @@
       <option name="project" value="LOCAL" />
       <updated>1657917086647</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="still cors">
+      <created>1657920817497</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1657920817498</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added ddpendencies and libraries" />
     <MESSAGE value="registration with validation done. Server send u access token after successful registration" />
     <MESSAGE value="fix missspeled" />
     <MESSAGE value="login user and sending access token complite" />
@@ -380,6 +387,7 @@
     <MESSAGE value="all looks fine, added how to sql should looks like" />
     <MESSAGE value="added Readme" />
     <MESSAGE value="fix: cors problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: cors problems" />
+    <MESSAGE value="still cors" />
+    <option name="LAST_COMMIT_MESSAGE" value="still cors" />
   </component>
 </project>

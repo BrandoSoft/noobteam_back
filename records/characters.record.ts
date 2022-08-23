@@ -61,10 +61,12 @@ export class CharactersRecord implements CharactersEntity {
     }
 
     static async findCharacter(characterName: string): Promise<RiotCharacterEntity | null> {
+        const encodedName =  encodeURIComponent(characterName)
+        console.log(characterName)
         try {
             const resp = await axios({
                 method: 'get',
-                url: `https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${characterName}`,
+                url: `https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${encodedName}`,
                 headers: {
                     'X-Riot-Token': process.env.API_KEY
                 }
