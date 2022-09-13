@@ -62,7 +62,6 @@ export class CharactersRecord implements CharactersEntity {
 
     static async findCharacter(characterName: string): Promise<RiotCharacterEntity | null> {
         const encodedName =  encodeURIComponent(characterName)
-        console.log(characterName)
         try {
             const resp = await axios({
                 method: 'get',
