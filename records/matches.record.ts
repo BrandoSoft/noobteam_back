@@ -24,7 +24,7 @@ export class MatchesRecord implements MatchesEntity {
             list = resp.data
         } catch
             (e) {
-            console.log('errorekas d as dasdasd', e)
+            console.log(`error w getMatchesList`)
 
         }
         return list

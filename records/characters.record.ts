@@ -108,7 +108,7 @@ export class CharactersRecord implements CharactersEntity {
             })
             return resp.data
         } catch (e) {
-            console.log(e)
+            console.log(`findmatch w characters records error`)
         }
     }
 
@@ -123,7 +123,7 @@ export class CharactersRecord implements CharactersEntity {
             })
             return resp.data
         } catch (e) {
-            console.log(e)
+            console.log(`getleeagues w characters error`)
         }
     }
 

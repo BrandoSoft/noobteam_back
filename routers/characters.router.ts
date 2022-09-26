@@ -16,6 +16,7 @@ export const CharactersRouter = Router()
     })
     .get('/leagues/:userId', authToken, async (req, res) => {
         const leagues = await CharactersRecord.getLeagues(req.params.userId);
+
         res.json(leagues);
     })
 
@@ -63,7 +64,7 @@ export const CharactersRouter = Router()
         return res.status(400).json({
             errors: [
                 {
-                    msg: 'No match found',
+                    msg: 'Gracz aktualnie nie gra',
                 },
             ],
         });
