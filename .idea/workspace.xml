@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40d02ead-8dd0-44f8-94a1-4773bebc3154" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/records/characters.record.ts" beforeDir="false" afterPath="$PROJECT_DIR$/records/characters.record.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/records/matches.record.ts" beforeDir="false" afterPath="$PROJECT_DIR$/records/matches.record.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/characters.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routers/characters.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +108,7 @@
       <workItem from="1662490778086" duration="604000" />
       <workItem from="1663006966472" duration="682000" />
       <workItem from="1663703480612" duration="1627000" />
-      <workItem from="1664194214211" duration="3339000" />
+      <workItem from="1664194214211" duration="4760000" />
     </task>
     <task id="LOCAL-00001" summary="added ddpendencies and libraries">
       <created>1656232614654</created>
@@ -378,14 +376,20 @@
       <option name="project" value="LOCAL" />
       <updated>1663101594825</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="debugging and change english responces into pl">
+      <created>1664206345252</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1664206345252</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login user and sending access token complite" />
     <MESSAGE value="user entity changed, we dont send user password anymore :D" />
     <MESSAGE value="Finding and returning characters or errors done" />
     <MESSAGE value="validation is player alrerady in user List" />
@@ -410,6 +414,7 @@
     <MESSAGE value="still cors" />
     <MESSAGE value="fix: error with special characters in name solved." />
     <MESSAGE value="dont have time to code, but its &quot;Day of the Programmer&quot; so i commit and push :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="dont have time to code, but its &quot;Day of the Programmer&quot; so i commit and push :D" />
+    <MESSAGE value="debugging and change english responces into pl" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugging and change english responces into pl" />
   </component>
 </project>
