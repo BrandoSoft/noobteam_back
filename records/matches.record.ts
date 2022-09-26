@@ -16,7 +16,7 @@ export class MatchesRecord implements MatchesEntity {
         try {
             const resp = await axios({
                 method: 'get',
-                url: `https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=3`,
+                url: `https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=2`,
                 headers: {
                     'X-Riot-Token': process.env.API_KEY
                 }

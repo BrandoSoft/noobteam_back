@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40d02ead-8dd0-44f8-94a1-4773bebc3154" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/records/matches.record.ts" beforeDir="false" afterPath="$PROJECT_DIR$/records/matches.record.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +108,7 @@
       <workItem from="1662490778086" duration="604000" />
       <workItem from="1663006966472" duration="682000" />
       <workItem from="1663703480612" duration="1627000" />
-      <workItem from="1664194214211" duration="4760000" />
+      <workItem from="1664194214211" duration="6209000" />
     </task>
     <task id="LOCAL-00001" summary="added ddpendencies and libraries">
       <created>1656232614654</created>
@@ -383,14 +383,20 @@
       <option name="project" value="LOCAL" />
       <updated>1664206345252</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="removet rate limit">
+      <created>1664208590398</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1664208590398</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="user entity changed, we dont send user password anymore :D" />
     <MESSAGE value="Finding and returning characters or errors done" />
     <MESSAGE value="validation is player alrerady in user List" />
     <MESSAGE value="remove players from list added" />
@@ -415,6 +421,7 @@
     <MESSAGE value="fix: error with special characters in name solved." />
     <MESSAGE value="dont have time to code, but its &quot;Day of the Programmer&quot; so i commit and push :D" />
     <MESSAGE value="debugging and change english responces into pl" />
-    <option name="LAST_COMMIT_MESSAGE" value="debugging and change english responces into pl" />
+    <MESSAGE value="removet rate limit" />
+    <option name="LAST_COMMIT_MESSAGE" value="removet rate limit" />
   </component>
 </project>
