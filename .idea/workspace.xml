@@ -108,7 +108,7 @@
       <workItem from="1662490778086" duration="604000" />
       <workItem from="1663006966472" duration="682000" />
       <workItem from="1663703480612" duration="1627000" />
-      <workItem from="1664194214211" duration="6209000" />
+      <workItem from="1664194214211" duration="12071000" />
     </task>
     <task id="LOCAL-00001" summary="added ddpendencies and libraries">
       <created>1656232614654</created>
@@ -390,14 +390,20 @@
       <option name="project" value="LOCAL" />
       <updated>1664208590398</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="changing response to 2 matches instead of 3 bcs of apikey limitation">
+      <created>1664216004551</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1664216004551</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finding and returning characters or errors done" />
     <MESSAGE value="validation is player alrerady in user List" />
     <MESSAGE value="remove players from list added" />
     <MESSAGE value="allay and enemies in game works" />
@@ -422,6 +428,7 @@
     <MESSAGE value="dont have time to code, but its &quot;Day of the Programmer&quot; so i commit and push :D" />
     <MESSAGE value="debugging and change english responces into pl" />
     <MESSAGE value="removet rate limit" />
-    <option name="LAST_COMMIT_MESSAGE" value="removet rate limit" />
+    <MESSAGE value="changing response to 2 matches instead of 3 bcs of apikey limitation" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing response to 2 matches instead of 3 bcs of apikey limitation" />
   </component>
 </project>

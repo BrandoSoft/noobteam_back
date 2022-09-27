@@ -33,19 +33,23 @@ export class MatchesRecord implements MatchesEntity {
 
     static async getScore(matchId: string): Promise<MatchScore> {
 
-
-        const gameResp = await axios({
-            method: 'get',
-            url: `https://europe.api.riotgames.com/lol/match/v5/matches/${matchId}`,
-            headers: {
-                'X-Riot-Token': process.env.API_KEY
+        try {
+            const gameResp = await axios({
+                method: 'get',
+                url: `https://europe.api.riotgames.com/lol/match/v5/matches/${matchId}`,
+                headers: {
+                    'X-Riot-Token': process.env.API_KEY
+                }
+            })
+            return {
+                name: gameResp.data.info.participants[0].championName,
+                kills: gameResp.data.info.participants[0].kills,
+                deaths: gameResp.data.info.participants[0].deaths,
+                assists: gameResp.data.info.participants[0].assists
             }
-        })
-        return {
-            name: gameResp.data.info.participants[0].championName,
-            kills: gameResp.data.info.participants[0].kills,
-            deaths: gameResp.data.info.participants[0].deaths,
-            assists: gameResp.data.info.participants[0].assists
+        } catch (e) {
+            console.log(e)
         }
+
     }
 }
