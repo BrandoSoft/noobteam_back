@@ -21,6 +21,7 @@ export class MatchesRecord implements MatchesEntity {
                     'X-Riot-Token': process.env.API_KEY
                 }
             })
+            console.log(puuid, 'odsylam : ', resp.data)
             list = resp.data
         } catch
             (e) {
