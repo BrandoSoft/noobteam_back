@@ -5,11 +5,14 @@ export interface MatchScore{
     name: string,
     kills: number,
     deaths: number,
-    assists: number
+    assists: number,
+    lane: string,
+    role: string,
+    win: boolean,
 }
 
 
 export interface MatchesEntity{
-    puuid: string
+    puuid: string,
     list: string[]
 }

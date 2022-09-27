@@ -45,7 +45,10 @@ export class MatchesRecord implements MatchesEntity {
                 name: gameResp.data.info.participants[0].championName,
                 kills: gameResp.data.info.participants[0].kills,
                 deaths: gameResp.data.info.participants[0].deaths,
-                assists: gameResp.data.info.participants[0].assists
+                assists: gameResp.data.info.participants[0].assists,
+                lane: gameResp.data.info.participants[0].lane,
+                role: gameResp.data.info.participants[0].role,
+                win: gameResp.data.info.participants[0].win,
             }
         } catch (e) {
             console.log(e)
