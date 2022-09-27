@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="40d02ead-8dd0-44f8-94a1-4773bebc3154" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/records/matches.record.ts" beforeDir="false" afterPath="$PROJECT_DIR$/records/matches.record.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/matches/matches-entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/matches/matches-entity.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +107,7 @@
       <workItem from="1662490778086" duration="604000" />
       <workItem from="1663006966472" duration="682000" />
       <workItem from="1663703480612" duration="1627000" />
-      <workItem from="1664194214211" duration="12902000" />
+      <workItem from="1664194214211" duration="13768000" />
     </task>
     <task id="LOCAL-00001" summary="added ddpendencies and libraries">
       <created>1656232614654</created>
@@ -405,14 +403,20 @@
       <option name="project" value="LOCAL" />
       <updated>1664291181842</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="added more info sended from api to frontend (win, role, lane), also updated interface">
+      <created>1664293166680</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1664293166680</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove players from list added" />
     <MESSAGE value="allay and enemies in game works" />
     <MESSAGE value="added match router + methods to get info about matches and scores" />
     <MESSAGE value="getting data about champion league is done" />
@@ -437,6 +441,7 @@
     <MESSAGE value="removet rate limit" />
     <MESSAGE value="changing response to 2 matches instead of 3 bcs of apikey limitation" />
     <MESSAGE value="added try catch do getscore function, while somethimes throww error" />
-    <option name="LAST_COMMIT_MESSAGE" value="added try catch do getscore function, while somethimes throww error" />
+    <MESSAGE value="added more info sended from api to frontend (win, role, lane), also updated interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more info sended from api to frontend (win, role, lane), also updated interface" />
   </component>
 </project>
