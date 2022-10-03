@@ -123,7 +123,7 @@ export class CharactersRecord implements CharactersEntity {
             })
             return resp.data
         } catch (e) {
-            console.log(`getleeagues w characters error`)
+            console.log(`getleeagues w characters error`, e)
         }
     }
 

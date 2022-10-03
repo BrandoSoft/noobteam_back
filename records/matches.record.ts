@@ -10,13 +10,13 @@ export class MatchesRecord implements MatchesEntity {
         this.puuid = obj.puuid;
     }
 
-    static async getMatchesList(puuid: string): Promise<MatchList | null> {
+    static async getMatchesList(puuid: string): Promise<MatchList | null | string> {
 
         let list;
         try {
             const resp = await axios({
                 method: 'get',
-                url: `https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=2`,
+                url: `https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=3`,
                 headers: {
                     'X-Riot-Token': process.env.API_KEY
                 }
@@ -25,14 +25,14 @@ export class MatchesRecord implements MatchesEntity {
             list = resp.data
         } catch
             (e) {
-            console.log(`error w getMatchesList`)
-
+            console.log(`error w getMatchesList`, e.response.status)
+            return 'error 429 w getmatches list'
         }
         return list
 
     }
 
-    static async getScore(matchId: string): Promise<MatchScore> {
+    static async getScore(matchId: string): Promise<MatchScore | string> {
 
         try {
             const gameResp = await axios({
@@ -51,9 +51,10 @@ export class MatchesRecord implements MatchesEntity {
                 role: gameResp.data.info.participants[0].role,
                 win: gameResp.data.info.participants[0].win,
             }
-        } catch (e) {
-            console.log(e)
-        }
 
+        } catch (e) {
+            console.log(e.response.headers)
+            return "Too many request, APIKEY cant handle so much"
+        }
     }
 }

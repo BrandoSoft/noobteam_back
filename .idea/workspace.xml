@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40d02ead-8dd0-44f8-94a1-4773bebc3154" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/records/characters.record.ts" beforeDir="false" afterPath="$PROJECT_DIR$/records/characters.record.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/records/matches.record.ts" beforeDir="false" afterPath="$PROJECT_DIR$/records/matches.record.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +110,11 @@
       <workItem from="1663006966472" duration="682000" />
       <workItem from="1663703480612" duration="1627000" />
       <workItem from="1664194214211" duration="14818000" />
-      <workItem from="1664310055580" duration="1956000" />
+      <workItem from="1664310055580" duration="2232000" />
+      <workItem from="1664445640400" duration="2371000" />
+      <workItem from="1664542287314" duration="73000" />
+      <workItem from="1664542382656" duration="4826000" />
+      <workItem from="1664808946193" duration="1002000" />
     </task>
     <task id="LOCAL-00001" summary="added ddpendencies and libraries">
       <created>1656232614654</created>
@@ -419,14 +424,20 @@
       <option name="project" value="LOCAL" />
       <updated>1664294013124</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="debugging code, but looks like backend works fine">
+      <created>1664312406517</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1664312406517</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="allay and enemies in game works" />
     <MESSAGE value="added match router + methods to get info about matches and scores" />
     <MESSAGE value="getting data about champion league is done" />
     <MESSAGE value="fixed problem with sql, where u cant add player, if other user already got him in his List." />
@@ -451,6 +462,7 @@
     <MESSAGE value="changing response to 2 matches instead of 3 bcs of apikey limitation" />
     <MESSAGE value="added try catch do getscore function, while somethimes throww error" />
     <MESSAGE value="added more info sended from api to frontend (win, role, lane), also updated interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more info sended from api to frontend (win, role, lane), also updated interface" />
+    <MESSAGE value="debugging code, but looks like backend works fine" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugging code, but looks like backend works fine" />
   </component>
 </project>
