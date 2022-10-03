@@ -8,8 +8,9 @@ export const MatchesRouter = Router()
         res.json('Witamy w Meczach')
     })
 
-    .get('/playermatches/:puuid', authToken, async (req, res) => {
-        const matches = await MatchesRecord.getMatchesList(req.params.puuid)
+    .get('/playermatches/:puuid/:counter', authToken, async (req, res) => {
+        const {puuid, counter} = req.params;
+        const matches = await MatchesRecord.getMatchesList(puuid, Number(counter))
         res.json(matches)
     })
     .get('/matchinfo/:id', authToken, async (req, res) => {

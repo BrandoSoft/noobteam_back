@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="40d02ead-8dd0-44f8-94a1-4773bebc3154" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/records/characters.record.ts" beforeDir="false" afterPath="$PROJECT_DIR$/records/characters.record.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/records/matches.record.ts" beforeDir="false" afterPath="$PROJECT_DIR$/records/matches.record.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/matches.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routers/matches.router.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,7 @@
       <workItem from="1664445640400" duration="2371000" />
       <workItem from="1664542287314" duration="73000" />
       <workItem from="1664542382656" duration="4826000" />
-      <workItem from="1664808946193" duration="1002000" />
+      <workItem from="1664808946193" duration="2598000" />
     </task>
     <task id="LOCAL-00001" summary="added ddpendencies and libraries">
       <created>1656232614654</created>
@@ -431,14 +431,20 @@
       <option name="project" value="LOCAL" />
       <updated>1664312406517</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="handling error with too many requests">
+      <created>1664810166598</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1664810166598</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added match router + methods to get info about matches and scores" />
     <MESSAGE value="getting data about champion league is done" />
     <MESSAGE value="fixed problem with sql, where u cant add player, if other user already got him in his List." />
     <MESSAGE value="added env file and move DB into hosting." />
@@ -463,6 +469,7 @@
     <MESSAGE value="added try catch do getscore function, while somethimes throww error" />
     <MESSAGE value="added more info sended from api to frontend (win, role, lane), also updated interface" />
     <MESSAGE value="debugging code, but looks like backend works fine" />
-    <option name="LAST_COMMIT_MESSAGE" value="debugging code, but looks like backend works fine" />
+    <MESSAGE value="handling error with too many requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="handling error with too many requests" />
   </component>
 </project>

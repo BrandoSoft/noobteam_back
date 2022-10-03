@@ -10,13 +10,13 @@ export class MatchesRecord implements MatchesEntity {
         this.puuid = obj.puuid;
     }
 
-    static async getMatchesList(puuid: string): Promise<MatchList | null | string> {
+    static async getMatchesList(puuid: string, counter: number): Promise<MatchList | null | string> {
 
         let list;
         try {
             const resp = await axios({
                 method: 'get',
-                url: `https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=3`,
+                url: `https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=${counter}`,
                 headers: {
                     'X-Riot-Token': process.env.API_KEY
                 }
